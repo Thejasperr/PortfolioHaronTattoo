@@ -1,0 +1,61 @@
+/* Para dispositivos móveis */
+@media (min-width: 320px) and (max-width: 767px) {
+    /* ------ <HEADER> ------ */
+    header .conteudo h1{
+        display: none;
+    }
+  
+    header .conteudo a img{
+        width: 130px;
+        position: relative;
+        left: 10px;
+    }
+    
+    header i{
+        font-size: 2rem;
+    }
+
+    /* ------ <HEADER/> ------ */
+
+
+
+
+    /* ------ <NAV> ------ */
+    nav .menu-hamburguer {
+        display: flex;
+        margin: 15px 0;
+    }
+    
+    nav ul {
+        padding-left: 20px;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color: black;
+        transition:opacity 0.5s ease;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.5);
+        -moz-box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.5);
+        box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.5);
+    }
+    
+    nav ul.active {
+        transition:opacity 0.5s ease-out;
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    nav ul li {
+        margin: 20px 0;
+    }
+    /* ------ <NAV/> ------ */
+
+    #Sobre{
+        height: 1000px;
+        background-color: yellow;
+    }
+}

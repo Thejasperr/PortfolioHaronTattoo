@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@font-face{
+    font-family: Hallo_Oyster;
+    src: url("/fonts/Hallo_Oyster.otf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --cor-preta: #040404;
+    --cor-branca: #f0f8ff;
+    --padding-conteudo: 100px 80px;
+    --transicao: all .5s ease;
+}
+
+
+/* ------ <HEADER> ------ */
+header{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--cor-preta);
+    background-image: url(/img/bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+}
+
+header::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    background-color: #202020;
+    mix-blend-mode: multiply;
+}
+
+header .conteudo{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    z-index: 1;
+}
+
+header .conteudo h1{
+    margin: 0 auto;
+    color: aliceblue;
+    font-family: Hallo_Oyster;
+    font-size: 120px;
+    font-weight: 100;
+}
+
+header .conteudo a img{
+    width: 150px;
+    margin: 0 50px;
+}
+
+header .conteudo a img:hover{
+    transform: scale(1.1);
+    transition: var(--transicao);
+}
+
+header i{
+    color: var(--cor-branca);
+    z-index: 1000;
+    text-align: center;
+    font-size: 50px;
+    position: relative;
+    bottom: -30px;
+    animation: bounce 2s ease infinite;
+    transition: opacity 0.5s ease;
+}
+
+@keyframes bounce {
+    70% { transform:translatey(0%); }
+    80% { transform:translatey(-100%); }
+    90% { transform:translatey(0%); }
+    95% { transform:translatey(-10%); }
+    97% { transform:translatey(0%); }
+    99% { transform:translatey(-5%); }
+    100% { transform:translatey(0); }
+}
+/* ------ <HEADER/> ------ */
+
+
+/* ------ <NAV> ------ */
+nav{
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.5);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    padding: 20px 0;
+}
+
+nav ul li{
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: var(--cor-branca);
+    font-size: 20px;
+}
+
+nav ul li:hover{
+    transform: scale(1.1);
+    transition: var(--transicao);
+}
+
+  /* Estilos do menu-hamburguer */
+nav .menu-hamburguer {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 998;
+}
+
+nav .menu-hamburguer span {
+    width: 100%;
+    height: 3px;
+    background-color: aliceblue;
+    transition: all 0.3s ease;
+}
+
+/* Transformação para o 'X' */
+nav .menu-hamburguer.active span:nth-child(1) {
+    transform: rotate(45deg) translate(9px, 9px);
+}
+
+nav .menu-hamburguer.active span:nth-child(2) {
+    opacity: 0;
+}
+
+nav .menu-hamburguer.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Ocultar o menu em dispositivos móveis inicialmente */
+nav.navegacao ul {
+    display: flex;
+    list-style: none;
+}
+/* ------ <NAV/> ------ */
+
+
+
+/* ------ <SOBRE> ------ */
+#Sobre{
+    background-image: url(/img/bg3.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+
+
+#Sobre::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(34, 34, 34, 0.9);
+    mix-blend-mode: multiply;
+    pointer-events: none;
+}
+
+#Sobre::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 127px;
+    background-image: url(/img/separaçaodegrade.png);
+    background-repeat: repeat-x;
+    background-position: left;
+    position: absolute;
+    bottom: -60px;
+    left: 0;
+    z-index: 2;
+}
+
+#Sobre .conteudo{
+    color: var(--cor-branca);
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: var(--padding-conteudo);
+    text-align: center;
+}
+
+
+#Sobre .conteudo img{
+    width: 300px;
+    filter: blur(1px) grayscale(1);
+}
+
+#Sobre .conteudo a:hover img{
+    transform: scale(1.05);
+    filter: blur(0) grayscale(0);
+    transition: all .5s ease;
+}
+
+#Sobre .conteudo a{
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+}
+
+#Sobre .conteudo a::before{
+    content: '';
+    position: absolute;
+    border: aliceblue solid 3px;
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+    opacity: 0;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+    z-index: 2;
+}
+
+#Sobre .conteudo a:hover:before, #Sobre .conteudo a:hover:after{
+    opacity: 1;
+}
+
+#Sobre .conteudo a::after{
+    content: "\f16d";
+    font-family: "Font Awesome 5 Brands";
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    font-size: 40px;
+    color: var(--cor-branca);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    padding: 10px;
+}
+/* ------ <SOBRE/> ------ */
