@@ -54,8 +54,19 @@
     }
     /* ------ <NAV/> ------ */
 
-    #Sobre{
-        height: 1000px;
-        background-color: yellow;
+    #Sobre .conteudo{
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 80px 50px;
+    }
+
+    #Sobre .conteudo .textos{
+        margin-left: 0;
+        margin-bottom: 50px;
+    }
+
+    #Sobre .conteudo img{
+        width: 100%;
+        filter: blur(0px) grayscale(0);
     }
 }

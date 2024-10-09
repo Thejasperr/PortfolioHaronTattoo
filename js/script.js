@@ -25,6 +25,5 @@ window.onscroll = function() {
           }
       });
   });
-  
-  // Observa a seção alvo
+
   observer.observe(secaoAlvo);

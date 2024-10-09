@@ -248,9 +248,9 @@ nav.navegacao ul {
     content: '';
     position: absolute;
     border: aliceblue solid 3px;
-    top: 6px;
-    left: 6px;
-    right: 6px;
+    top: 0px;
+    left:0px;
+    right: 0;
     bottom: 6px;
     opacity: 0;
     -webkit-transition-duration: 0.5s;
@@ -277,4 +277,148 @@ nav.navegacao ul {
     pointer-events: none;
     padding: 10px;
 }
+
+#Sobre .conteudo .textos{
+    margin-left: 100px;
+}
 /* ------ <SOBRE/> ------ */
+
+
+/* ------ <PORTFOLIO> ------ */
+
+#Portfolio{
+    background-image: url(/img/bg1.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+
+#Portfolio .conteudo{
+    text-align: center;
+    padding: var(--padding-conteudo);
+    color: var(--cor-branca);
+}
+
+#Portfolio .conteudo .galeria{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+#Portfolio .conteudo .galeria>div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+#Portfolio .conteudo .galeria .box{
+    width: 200px;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+#Portfolio .conteudo .galeria .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#Portfolio .conteudo .galeria .box .mascara{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #00000080;
+}
+
+#Portfolio .conteudo .galeria .box .icone{
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#Portfolio .conteudo .galeria .box .mascara{
+    opacity: 0;
+}
+
+#Portfolio .conteudo .galeria .box:hover .mascara{
+    opacity: 1;
+    transition: all .5s;
+}
+
+#Portfolio .conteudo .galeria .box::before{
+    content: '';
+    position: absolute;
+    border: aliceblue solid 3px;
+    top: 6px;
+    left:6px;
+    right: 6px;
+    bottom: 6px;
+    opacity: 0;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+    z-index: 2;
+}
+
+#Portfolio .conteudo .galeria .box:hover:before{
+    opacity: 1;
+}
+
+#Portfolio .conteudo .galeria .box:hover img{
+    transform: scale(1.2);
+    transition: all .5s;
+}
+
+#Portfolio .conteudo .galeria .popup{
+    opacity: 1;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000cc;
+}
+
+#Portfolio .conteudo .galeria .popup img{
+    width: 400px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid var(--cor-branca);
+    -webkit-box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.5);
+}
+
+#Portfolio .conteudo .galeria .popup{
+    opacity: 0;
+    z-index: -1;
+}
+
+.fade-in{
+    transition: opacity .5s;
+    opacity: 1 !important;
+    z-index: 2 !important;
+}
+
+
+/* ------ <PORTFOLIO/> ------ */
