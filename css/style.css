@@ -541,6 +541,112 @@ nav.navegacao ul {
     color: aliceblue;
     text-decoration: none;
 }
-
-
 /* ------ <CONTATO/> ------ */
+
+
+
+
+/* ------ <FOOTER> ------ */
+footer{
+    height: 100%;
+    background-color: black;
+}
+
+footer .conteudo{
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    color: aliceblue;
+    padding: 50px 130px;
+    justify-content: space-around;
+}
+
+footer .conteudo .logo a img{
+    width: 100px;
+}
+
+footer .conteudo nav{
+    display: flex;
+
+}
+
+footer .conteudo nav ul{
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .conteudo nav ul li{
+    margin: 5px 0px;
+}
+
+footer .conteudo nav ul li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+footer .agradecimento{
+    display: flex;
+    border-top: 1px solid rgba(240, 248, 255, 0.1);
+    color: aliceblue;
+    padding: 5px 30px;
+    justify-content: space-between;
+}
+
+footer .agradecimento a{
+    text-decoration: none;
+    color: aliceblue;
+}
+/* ------ <FOOTER/> ------ */
+
+
+
+
+/* ------ <BOTAO WPP> ------ */
+.botaowpp{
+    position: fixed;
+    bottom: 50px;
+    left: 50px;
+    z-index: 9999;
+    background: #09a513;
+    color: white;
+    border: 1px solid #09a513;
+    border-radius: 70px;
+    box-shadow: 0 0 0 0 rgba(9, 165, 19, 0.50);
+    font-size: 30px;
+    display: inline-block;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-decoration: none;
+    transition: opacity 0.5s ease;
+}
+
+.botaowpp:hover, .botaowpp:active{
+    transition: 100ms linear !important;
+    transform: scale(1.11) !important;
+}
+
+.animation {
+    animation: alerta 1.5s infinite;
+}
+
+@keyframes alerta {
+    0% {
+        transform: scale();
+    }
+
+    70% {
+      transform: scale();
+      box-shadow: 0 0 0 50px rgba(69, 152, 27, 0);
+    }
+
+      100% {
+      transform: scale();
+      box-shadow: 0 0 0 0 rgba(69, 152, 27, 0);
+    }
+}
+/* ------ <BOTAO WPP/> ------ */
+
