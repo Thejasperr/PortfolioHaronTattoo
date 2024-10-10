@@ -3,6 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <!-- SCRIPT -->
     <script src="https://kit.fontawesome.com/60833babc4.js" crossorigin="anonymous"></script>
     <!-- STYLESHEET -->
@@ -51,7 +59,7 @@
         <section id="Portfolio">
             <div class="conteudo">
                 <H1>PORTFÓLIO</H1>
-                <div class="galeria">
+                <div id="galeria" class="galeria">
                     <div>
                         <div class="box">
                             <img src="/img-portfolio/1.jpg">
@@ -117,17 +125,78 @@
                             <img src="/img-portfolio/1.jpg">
                         </div>
                     </div>
-                    
-                    
+                </div>
+                <div id="galeria-mobile" class="galeria-mobile">
+                    <div id="galeriaImagens">
+                        <div class="box-mobile">
+                            <img src="/img-portfolio/1.jpg">
+                        </div>
+                        <div class="box-mobile">
+                            <img src="/img-portfolio/2.jpg">
+                        </div>
+                        <div class="box-mobile">
+                            <img src="/img-portfolio/3.jpg">
+                        </div>
+                        <div class="box-mobile">
+                            <img src="/img-portfolio/4.jpg">
+                        </div>
+                        <div class="box-mobile">
+                            <img src="/img-portfolio/5.jpg">
+                        </div>
+                        <div class="box-mobile">
+                            <img src="/img-portfolio/6.jpg">
+                        </div>
+                        <div class="box-mobile">
+                            <img src="/img-portfolio/7.jpg">
+                        </div>
+                        <div class="box-mobile">
+                            <img src="/img-portfolio/8.jpg">
+                        </div>
+                        <div class="box-mobile">
+                            <img src="/img-portfolio/9.jpg">
+                        </div>
+                        <div class="box-mobile">
+                            <img src="/img-portfolio/10.jpg">
+                        </div>
+                    </div>
+                    <button class="botao esquerda" onclick="mover(-1)">&#10094;</button>
+                    <button class="botao direita" onclick="mover(1)">&#10095;</button>            
                 </div>
             </div>
+            <div class="instagram">
+                <div class="conteudo-insta">
+                    <a href="https://www.instagram.com/harontattoo/" target="_blank" rel="noopener noreferrer">
+                        <img src="/img/HAinsta.jpg">
+                    </a>   
+                    <a href="https://www.instagram.com/harontattoo/" target="_blank" rel="noopener noreferrer">
+                        <h2><i class="fa-brands fa-instagram"></i> Me siga, para ver mais!</h2>
+                    </a>   
+                </div>
+            </div>
+        </section>
+        <section id="Contato">
+            <div class="conteudo">
+                <div class="texto">
+                    <h1>CONTATO</h1>
+                    <p> Cada desenho é único, feito para combinar com você. Aqui, o foco é na qualidade, segurança e em criar uma experiência inesquecível para cada cliente. Seja sua primeira tattoo ou mais uma para a coleção, vamos criar algo especial. Não perca tempo, agende sua sessão agora e eternize sua arte no meu estúdio!</p>
+                    <a href="https://api.whatsapp.com/message/TBCP763NGDAJP1?autoload=1&app_absent=0" target="_blank"><i class="fa fa-whatsapp"></i> PEÇA UM ORÇAMENTO</a>
+                </div>
+                <div class="info">
+                    <h1>INFORMAÇÕES</h1>
+                    <p><a href="https://api.whatsapp.com/message/TBCP763NGDAJP1?autoload=1&app_absent=0" target="_blank" rel="noopener noreferrer"><i class="bi bi-phone-fill"></i> (14) 99755-1304</a></p>
+                    <p><a href="https://www.google.com/maps/dir//Haron+Tattoo+Av.+Jacinto+Ferreira+de+Sá,+1225+-+Vila+Perino+Ourinhos+-+SP+19911-721/@-22.9742008,-49.8611018,16z/data=!4m5!4m4!1m0!1m2!1m1!1s0x94c0199b7d06fc4f:0xbe9f0383ca410f73" target="_blank" rel="noopener noreferrer"><i class="bi bi-geo-alt-fill"></i> Av. Jacinto Ferreira de Sá, 1225 - Vila Perino, Ourinhos - SP, 19911-721</a></p>
+                </div>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.348720326886!2d-49.86367672468756!3d-22.97420077920776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c0199b7d06fc4f%3A0xbe9f0383ca410f73!2sHaron%20Tattoo!5e0!3m2!1spt-BR!2sbr!4v1727995734851!5m2!1spt-BR!2sbr" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    
         </section>
     </main>
 
 
     <!-- SCRIPT -->
-    <script src="js/galeria.js"></script>
+    <script src="js/galeria-portfolio.js"></script>
     <script src="js/script.js"></script>
     <script src="js/nav.js"></script>
+    <script src="js/carrossel-mobile.js"></script>
+    <script src="js/troca-galeria.js"></script>
 </body>
 </html>

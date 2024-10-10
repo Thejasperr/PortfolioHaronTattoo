@@ -54,19 +54,81 @@
     }
     /* ------ <NAV/> ------ */
 
+
+
+
+    /* ------ <SOBRE> ------ */
     #Sobre .conteudo{
         display: flex;
         flex-direction: column-reverse;
         padding: 80px 50px;
     }
-
+    
     #Sobre .conteudo .textos{
         margin-left: 0;
         margin-bottom: 50px;
     }
-
+    
     #Sobre .conteudo img{
         width: 100%;
         filter: blur(0px) grayscale(0);
     }
+    /* ------ <SOBRE/> ------ */
+
+
+
+
+    /* ------ <PORTFOLIO> ------ */
+    #Portfolio .conteudo .galeria-mobile {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+    }
+
+    #Portfolio .conteudo #galeriaImagens {
+        display: flex;
+        transition: transform 0.5s ease;
+        width: 100%;
+        position: relative;
+    }
+
+    #Portfolio .conteudo .galeria-mobile .box-mobile {
+        min-width: 100%;
+        /* height: 300px; */
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+    }
+
+    #Portfolio .conteudo .galeria-mobile .box-mobile img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    #Portfolio .conteudo .botao {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(255, 255, 255, 0.8);
+        border: none;
+        cursor: pointer;
+        font-size: 24px;
+        z-index: 500;
+        padding: 5px 10px;
+    }
+
+    #Portfolio .conteudo .botao.esquerda {
+        left: 10px;
+    }
+
+    #Portfolio .conteudo .botao.direita {
+        right: 10px;
+    }
+    /* ------ <PORTFOLIO/> ------ */
 }
