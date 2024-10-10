@@ -2,7 +2,7 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 @font-face{
     font-family: Hallo_Oyster;
-    src: url("/fonts/Hallo_Oyster.otf");
+    src: url("fonts/Hallo_Oyster.otf");
 }
 
 *{
@@ -26,7 +26,7 @@ header{
     height: 100vh;
     width: 100%;
     background-color: var(--cor-preta);
-    background-image: url(/img/bg2.jpg);
+    background-image: url(img/bg2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     color: aliceblue;
@@ -175,7 +175,7 @@ nav.navegacao ul {
 
 /* ------ <SOBRE> ------ */
 #Sobre{
-    background-image: url(/img/bg3.jpg);
+    background-image: url(img/bg3.jpg);
     background-repeat: no-repeat;
     background-position: 0 0;
     background-attachment: fixed;
@@ -202,7 +202,7 @@ nav.navegacao ul {
     display: block;
     width: 100%;
     height: 127px;
-    background-image: url(/img/separaçaodegrade.png);
+    background-image: url(img/separaçaodegrade.png);
     background-repeat: repeat-x;
     background-position: left;
     position: absolute;
@@ -286,7 +286,7 @@ nav.navegacao ul {
 
 /* ------ <PORTFOLIO> ------ */
 #Portfolio{
-    background-image: url(/img/bg1.jpg);
+    background-image: url(img/bg1.jpg);
     width: 100%;
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -441,7 +441,7 @@ nav.navegacao ul {
     display: block;
     width: 100%;
     height: 100px;
-    background-image: url(/img/bg-insta.png);
+    background-image: url(img/bg-insta.png);
     background-repeat: no-repeat;
     background-position: 0 0;
     mix-blend-mode: multiply;
@@ -481,7 +481,7 @@ nav.navegacao ul {
 
 /* ------ <CONTATO> ------ */
 #Contato{
-    background-image: url(/img/bg1.jpg);
+    background-image: url(img/bg1.jpg);
     width: 100%;
     background-repeat: no-repeat;
     background-position: 0 0;
