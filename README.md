@@ -32,4 +32,4 @@ Este projeto é o site pessoal do **Haron Tattoo**, localizado em Ourinhos, SP, 
 
 1. Clone o repositório:
    ```bash
-   git clone [https://github.com/Thejasper/haron-tattoo-website.git](https://github.com/Thejasperr/PortfolioHaronTattoo.git)
+   git clone https://github.com/Thejasper/haron-tattoo-website.git
