@@ -27,3 +27,23 @@ window.onscroll = function() {
   });
 
   observer.observe(secaoAlvo);
+
+
+
+
+
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const content = document.querySelector('.content');
+    const desaparece = document.querySelector('.logo-jasper')
+    
+    // Depois de 0.5s, as setas se movem para os lados e o nome aparece
+    setTimeout(() => {
+        content.classList.add('active');
+    }, 600);  // As setas se movem após 0.5s e o nome aparece logo em seguida
+    
+    // Primeiro, define display block (simulado pela altura e opacidade)
+    setTimeout(() => {
+        desaparece.classList.add('desaparecer');
+    }, 3000);  // Aparecem logo após o carregamento
+});
